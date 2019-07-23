@@ -1,0 +1,468 @@
+{
+	"@platforms": [
+		"android",
+		"iPhone",
+		"iPad"
+	],
+	"id": "H5B1FDDAA",/*应用的标识，创建应用时自动生成，勿手动修改*/
+	"name": "izokun-mis-vue",/*应用名称，程序桌面图标名称*/
+	"version": {
+		"name": "1.0.4",/*应用版本名称*/
+		"code": ""
+	},
+	"description": "",/*应用描述信息*/
+	"icons": {
+		"72": "icon.png"
+	},
+	"launch_path": "dist/index.html",/*应用的入口页面，默认为根目录下的index.html；支持网络地址，必须以http://或https://开头*/
+	"developer": {
+		"name": "",/*开发者名称*/
+		"email": "",/*开发者邮箱地址*/
+		"url": ""
+	},
+	"permissions": {
+		"Messaging": {
+			"description": "短彩邮件插件"
+		},
+		"Cache": {
+			"description": "管理应用缓存"
+		},
+		"Console": {
+			"description": "跟踪调试输出日志"
+		},
+		"Contacts": {
+			"description": "访问系统联系人信息"
+		},
+		"Events": {
+			"description": "应用扩展事件"
+		},
+		"Maps": {
+			"description": "管理地图插件"
+		},
+		"Speech": {
+			"description": "管理语音识别插件"
+		},
+		"Zip": {},
+		"Audio": {},
+		"Device": {},
+		"Camera": {},
+		"Gallery": {},
+		"Runtime": {},
+		"Storage": {},
+		"Barcode": {},
+		"Uploader": {},
+		"NativeUI": {},
+		"Navigator": {},
+		"Invocation": {},
+		"Downloader": {},
+		"XMLHttpRequest": {},
+		"Webview": {},
+		"NativeObj": {}
+	},
+	"plus": {
+		"splashscreen": {
+			"autoclose": true,/*是否自动关闭程序启动界面，true表示应用加载应用入口页面后自动关闭；false则需调plus.navigator.closeSplashscreen()关闭*/
+			"waiting": true,
+			"delay": "1000"
+		},
+		"popGesture": "close",/*设置应用默认侧滑返回关闭Webview窗口，"none"为无侧滑返回功能，"hide"为侧滑隐藏Webview窗口。参考http://ask.dcloud.net.cn/article/102*/
+		"runmode": "normal",/*应用的首次启动运行模式，可取liberate或normal，liberate模式在第一次启动时将解压应用资源（Android平台File API才可正常访问_www目录）*/
+		"signature": "Sk9JTiBVUyBtYWlsdG86aHIyMDEzQGRjbG91ZC5pbw==",/*可选，保留给应用签名，暂不使用*/
+		"distribute": {
+			"apple": {
+				"appid": "",/*iOS应用标识，苹果开发网站申请的appid，如io.dcloud.HelloH5*/
+				"mobileprovision": "",/*iOS应用打包配置文件*/
+				"password": "",/*iOS应用打包个人证书导入密码*/
+				"p12": "",/*iOS应用打包个人证书，打包配置文件关联的个人证书*/
+				"devices": "universal",/*iOS应用支持的设备类型，可取值iphone/ipad/universal*/
+				"frameworks": []
+			},
+			"google": {
+				"packagename": "",/*Android应用包名，如io.dcloud.HelloH5*/
+				"keystore": "",/*Android应用打包使用的密���库文件*/
+				"password": "",/*Android应用打包使用密钥库中证书的密码*/
+				"aliasname": "",/*Android应用打包使用密钥库中证书的别名*/
+				"permissions": [
+					"<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+					"<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+					"<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+					"<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+					"<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+					"<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+					"<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+					"<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+					"<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+					"<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+					"<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+					"<uses-feature android:name=\"android.hardware.camera\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+					"<uses-permission android:name=\"android.permission.RECEIVE_USER_PRESENT\"/>",
+					"<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+					"<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>",
+					"<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\"/>",
+					"<uses-permission android:name=\"android.permission.CAMERA\"/>"
+				]
+			},
+			"orientation": [
+				"portrait-primary"
+			],/*应用支持的方向，portrait-primary：竖屏正方向；portrait-secondary：竖屏反方向；landscape-primary：横屏正方向；landscape-secondary：横屏反方向*/
+			"icons": {
+				"ios": {
+					"prerendered": true, /*应用图标是否已经高亮处理，在iOS6及以下设备上有效*/
+					"auto": "", /*应用图标，分辨率：512x512，用于自动生成各种尺寸程序图标*/
+					"iphone": {
+						"normal": "unpackage/res/icons/57x57.png", /*iPhone3/3GS程序图标，分辨率：57x57*/
+						"retina": "unpackage/res/icons/114x114.png", /*iPhone4程序图标，分辨率：114x114*/
+						"retina7": "unpackage/res/icons/120x120.png", /*iPhone4S/5/6程序图标，分辨率：120x120*/
+						"retina8": "unpackage/res/icons/180x180.png", /*iPhone6 Plus程序图标，分辨率：180x180*/
+						"spotlight-normal": "unpackage/res/icons/29x29.png", /*iPhone3/3GS Spotlight搜索程序图标，分辨率：29x29*/
+						"spotlight-retina": "unpackage/res/icons/58x58.png", /*iPhone4 Spotlight搜索程序图标，分辨率：58x58*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png", /*iPhone4S/5/6 Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png", /*iPhone4设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png", /*iPhone4S/5/6设置页面程序图标，分辨率：58x58*/
+						"settings-retina8": "unpackage/res/icons/87x87.png"
+					},
+					"ipad": {
+						"normal": "unpackage/res/icons/72x72.png", /*iPad普通屏幕程序图标，分辨率：72x72*/
+						"retina": "unpackage/res/icons/144x144.png", /*iPad高分屏程序图标，分辨率：144x144*/
+						"normal7": "unpackage/res/icons/76x76.png", /*iPad iOS7程序图标，分辨率：76x76*/
+						"retina7": "unpackage/res/icons/152x152.png", /*iPad iOS7高分屏程序图标，分辨率：152x152*/
+						"spotlight-normal": "unpackage/res/icons/50x50.png", /*iPad Spotlight搜索程序图标，分辨率：50x50*/
+						"spotlight-retina": "unpackage/res/icons/100x100.png", /*iPad高分屏Spotlight搜索程序图标，分辨率：100x100*/
+						"spotlight-normal7": "unpackage/res/icons/40x40.png",/*iPad iOS7 Spotlight搜索程序图标，分辨率：40x40*/
+						"spotlight-retina7": "unpackage/res/icons/80x80.png",/*iPad iOS7高分屏Spotlight搜索程序图标，分辨率：80x80*/
+						"settings-normal": "unpackage/res/icons/29x29.png",/*iPad设置页面程序图标，分辨率：29x29*/
+						"settings-retina": "unpackage/res/icons/58x58.png"
+					}
+				},
+				"android": {
+					"mdpi": "unpackage/res/icons/48x48.png", /*普通屏程序图标，分辨率：48x48*/
+					"ldpi": "unpackage/res/icons/48x48.png", /*大屏程序图标，分辨率：48x48*/
+					"hdpi": "unpackage/res/icons/72x72.png", /*高分屏程序图标，分辨率：72x72*/
+					"xhdpi": "unpackage/res/icons/96x96.png",/*720P高分屏程序图标，分辨率：96x96*/
+					"xxhdpi": "unpackage/res/icons/144x144.png",
+					"xxxhdpi": "unpackage/res/icons/192x192.png"
+				}
+			},
+			"splashscreen": {
+				"ios": {
+					"iphone": {
+						"default": "", /*iPhone3启动图片选，分辨率：320x480*/
+						"retina35": "",/*3.5英寸设备(iPhone4)启动图片，分辨率：640x960*/
+						"retina40": "",/*4.0 英寸设备(iPhone5/iPhone5s)启动图片，分辨率：640x1136*/
+						"retina47": "",/*4.7 英寸设备(iPhone6)启动图片，分辨率：750x1334*/
+						"retina55": "",/*5.5 英寸设备(iPhone6 Plus)启动图片，分辨率：1242x2208*/
+						"retina55l": ""
+					},
+					"ipad": {
+						"portrait": "", /*iPad竖屏启动图片，分辨率：768x1004*/
+						"portrait-retina": "",/*iPad高分屏竖屏图片，分辨率：1536x2008*/
+						"landscape": "", /*iPad横屏启动图片，分辨率：1024x748*/
+						"landscape-retina": "", /*iPad高分屏横屏启动图片，分辨率：2048x1496*/
+						"portrait7": "", /*iPad iOS7竖屏启动图片，分辨率：768x1024*/
+						"portrait-retina7": "",/*iPad iOS7高分屏竖屏图片，分辨率：1536x2048*/
+						"landscape7": "", /*iPad iOS7横屏启动图片，分辨率：1024x768*/
+						"landscape-retina7": ""
+					}
+				},
+				"android": {
+					"mdpi": "", /*普通屏启动图片，分辨率：240x282*/
+					"ldpi": "", /*大屏启动图片，分辨率：320x442*/
+					"hdpi": "C:/Users/zhou_/Desktop/qidong.png", /*高分屏启动图片，分辨率：480x762*/
+					"xhdpi": "C:/Users/zhou_/Desktop/qidong.png", /*720P高分屏启动图片，分辨率：720x1242*/
+					"xxhdpi": "C:/Users/zhou_/Desktop/qidong.png"
+				}
+			}
+		}
+	},
+	"dependencies": {
+		"pages": {
+			"dist/index.html": {
+				"resources": [
+					"dist/static/js/manifest.70f4bafadc64af1e30b5.js",
+					"dist/static/js/app.180f2f3a4429abc624d8.js",
+					"dist/static/css/app.2a45bc3174facd7cdc48a0f4fa164509.css",
+					"dist/static/js/vendor.b860c24205e9a187e1b1.js",
+					"dist/static/js/manifest.81e3ce85f61a4c6e391f.js",
+					"dist/static/js/app.26ce56476442e905959e.js",
+					"dist/static/css/app.702deed73329728b1d958d117301545e.css",
+					"dist/static/js/vendor.1a91bff41b1ac3ec0f01.js",
+					"dist/static/js/app.4ed0f1b07e410e27061d.js",
+					"dist/static/js/manifest.bd0105c0146c8aac0b12.js",
+					"dist/static/css/app.6b1cec953d0dbe5947c2ea61f73accbb.css",
+					"dist/static/js/vendor.489819bd260ebb65c6ad.js",
+					"dist/static/js/app.53b74cb373530d4ddcc3.js",
+					"dist/static/css/app.2186fa1a4cad47846dc5830cb7d06a26.css",
+					"dist/static/js/manifest.d0ba3839011ba8b2821a.js"
+				],
+				"refer": [],
+				"priority": 0
+			},
+			"dist/static/quickstart/index.html": {
+				"resources": [
+					"dist/static/quickstart/js/index.js",
+					"dist/static/quickstart/css/baby-blue.css",
+					"dist/static/quickstart/css/pure-min.css",
+					"dist/static/quickstart/css/style.css",
+					"dist/static/quickstart/js/config.js",
+					"dist/static/quickstart/css/bootstrap.css",
+					"dist/static/quickstart/libs/jquery.min.js"
+				],
+				"refer": [],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"dist/static/js/23.dd1e9a524ecf89b4bbb3.js",
+				"src/data/update-data.js",
+				"dist/static/fonts/iconfont.60bfc83.eot",
+				"dist/static/js/6.083543a8385d0e227eed.js",
+				"src/assets/imgs/zpfb.png",
+				"dist/static/js/3.90c6e67cbcbfab34778b.js",
+				"src/assets/imgs/fankuihuang.png",
+				"dist/static/quickstart/ReadME.md",
+				"src/mcs/law/AdminIndex.vue",
+				"src/assets/imgs/logo-1.png",
+				"src/mcs/dad/SelectInput.vue",
+				"src/assets/icons/iconfont.woff",
+				"dist/static/fonts/iconfont.899f5c7.ttf",
+				"package.json",
+				"src/assets/imgs/big02.png",
+				"dist/static/js/28.56b051330a867fa6d480.js.map",
+				"src/mcs/dmd/DmdApplyInput.vue",
+				"static/quickstart/libs/jquery.min.js",
+				"config/dev.env.js",
+				"static/test.html",
+				"README.md",
+				"dist/static/img/banyuan.0ef2f86.png",
+				"src/assets/imgs/womenlu.png",
+				"static/quickstart/css/pure-min.css",
+				"src/assets/imgs/big01.jpg",
+				"dist/static/js/27.e39302d27eaa51c467f0.js",
+				"src/assets/imgs/setting.png",
+				"src/assets/imgs/renwuqingdan.png",
+				"src/assets/imgs/arrow-sl.png",
+				"src/assets/imgs/gonggao.png",
+				"src/assets/logo.png",
+				"src/mcs/ids/IdsQueryView.vue",
+				"dist/static/js/25.87eb7bfc2c6bd97df4d8.js.map",
+				"src/assets/imgs/search.png",
+				"dist/static/js/25.87eb7bfc2c6bd97df4d8.js",
+				"dist/static/js/0.1a9717e05d1259a13d61.js",
+				"dist/static/js/27.e39302d27eaa51c467f0.js.map",
+				"src/main.js",
+				"test/e2e/nightwatch.conf.js",
+				"src/mcs/dmd/DmdApplyType.vue",
+				"dist/static/js/10.e72aa7fc1861d414231d.js",
+				"dist/static/js/12.d95a9f7fa75f1bc383d4.js",
+				"src/mcs/dad/PersonView.vue",
+				"static/quickstart/libs/vconsole.min.js",
+				"dist/static/js/12.d95a9f7fa75f1bc383d4.js.map",
+				"src/assets/imgs/bs-wc-bg.jpg",
+				"src/views/wui/admin-index.js",
+				"src/assets/imgs/xqcj.png",
+				"dist/static/js/21.9555ce4cfdb04c0e68d9.js.map",
+				"src/assets/less/theme.less",
+				"src/filters/gender.js",
+				"src/filters/disable-type.js",
+				"dist/static/img/sta2.9a6eedb.png",
+				"src/views/wui/Me.vue",
+				"dist/static/js/16.b1c688cefa4f6feee587.js",
+				"src/assets/imgs/boy.png",
+				"src/assets/imgs/caiji1.png",
+				"dist/static/js/17.b0ae581227ac9303a7f1.js",
+				"src/assets/imgs/girl.png",
+				"src/assets/css/amend-ui-style.css",
+				"src/assets/imgs/zhengcefagui.png",
+				"build/logo.png",
+				"src/mcs/dmd/AdminIndex.vue",
+				"dist/static/js/4.7f0b9191a9e7a3006a92.js",
+				"src/mcs/ids/PersonalCenterView.vue",
+				"src/data/data-map.js",
+				"src/data/api-gy.js",
+				"dist/static/js/vendor.b860c24205e9a187e1b1.js.map",
+				"config/prod.env.js",
+				"src/assets/icons/iconfont.ttf",
+				"src/assets/imgs/wuchang.png",
+				"build/webpack.base.conf.js",
+				"src/assets/icons/iconfont.svg",
+				"dist/static/js/20.db25e019c40b7f8ed7c5.js",
+				"src/assets/imgs/tkjz.png",
+				"src/views/wui/AdminMain.vue",
+				"src/assets/imgs/right.png",
+				"src/mcs/dev/Scan.vue",
+				"src/assets/imgs/shuaka.png",
+				"src/views/wui/Home.vue",
+				"dist/static/js/7.0b1563c7d4eeeec358d5.js",
+				"src/mcs/dmd/DmdApplyList.vue",
+				"src/assets/icons/iconfont.css",
+				"src/mcs/dad/PersonsList.vue",
+				"src/assets/imgs/left.png",
+				"src/mcs/msg/todoView.vue",
+				"dist/static/js/19.c84ad6c7978d168d8552.js",
+				"src/assets/imgs/tysq.png",
+				"build/check-versions.js",
+				"src/filters/marriage.js",
+				"dist/static/js/app.180f2f3a4429abc624d8.js.map",
+				"dist/static/js/13.715af177ffa8696c0260.js.map",
+				"src/mcs/dev/PayByCard.vue",
+				"dist/static/js/20.db25e019c40b7f8ed7c5.js.map",
+				"dist/static/img/womenlu.dfa6bb3.png",
+				"dist/static/js/16.b1c688cefa4f6feee587.js.map",
+				"src/mcs/dev/VideoChat.vue",
+				"src/assets/imgs/jiuye.png",
+				"test/unit/setup.js",
+				"src/assets/imgs/test.jpg",
+				"src/assets/imgs/swipe03.jpg",
+				"dist/static/js/24.ff92a9dc751437e0d30e.js",
+				"dist/static/js/14.85a5361ef885237d1910.js.map",
+				"dist/static/js/22.26018cd1ba331ff27bde.js.map",
+				"dist/static/js/5.1f72530a52f4f251ceda.js",
+				"dist/static/js/19.c84ad6c7978d168d8552.js.map",
+				"dist/static/js/22.26018cd1ba331ff27bde.js",
+				"src/assets/imgs/user_1.png",
+				"src/filters/update-title.js",
+				"src/router/index.js",
+				"src/filters/ch-en.js",
+				"dist/static/js/26.00b3d86be890788b058f.js",
+				"src/assets/imgs/jichuzhuangkuang.png",
+				"src/assets/imgs/jiaoyin.png",
+				"static/quickstart/ReadME.md",
+				"src/mcs/msg/todoList.vue",
+				"src/data/api-wh.js",
+				"src/assets/imgs/sta2.png",
+				"src/assets/imgs/zhedie2.png",
+				"src/assets/imgs/tongzhigonggao.png",
+				"static/quickstart/css/baby-blue.css",
+				"dist/static/img/girl.7f7fd7b.png",
+				"src/assets/imgs/zhedie.png",
+				"src/filters/relation.js",
+				"dist/static/js/15.e09e57f7b20a0f585497.js.map",
+				"dist/static/img/login_bg.59fae62.jpg",
+				"src/assets/imgs/sta.png",
+				"src/assets/imgs/daka.png",
+				"dist/static/js/1.aae82944596a5c12878a.js",
+				"src/assets/imgs/banyuan.png",
+				"src/assets/imgs/logo.png",
+				"src/data/version-data.json",
+				"src/assets/imgs/jibenxinxi1.png",
+				"dist/static/img/bs-wc-bg.4771092.jpg",
+				"src/assets/css/index.css",
+				"static/quickstart/css/style.css",
+				"dist/static/img/sta.0c2579f.png",
+				"dist/static/js/18.9365d476ac0e9307fea4.js",
+				"dist/static/js/24.ff92a9dc751437e0d30e.js.map",
+				"src/mcs/law/LawMatch.vue",
+				"package-lock.json",
+				"src/assets/icons/iconfont.eot",
+				"dist/static/js/4.7f0b9191a9e7a3006a92.js.map",
+				"src/views/wui/Stat.vue",
+				"dist/static/js/9.6fe6df5c065a54fae687.js.map",
+				"dist/static/js/14.85a5361ef885237d1910.js",
+				"build/webpack.dev.conf.js",
+				"static/quickstart/index.html",
+				"index.html",
+				"src/assets/imgs/zhengce.png",
+				"src/assets/imgs/login_bg.jpg",
+				"dist/static/js/11.ac271fe66df6ec4f372e.js.map",
+				"src/mcs/dmd/BasicsConditionView.vue",
+				"dist/static/js/0.1a9717e05d1259a13d61.js.map",
+				"src/filters/nation.js",
+				"dist/static/js/6.083543a8385d0e227eed.js.map",
+				"config/index.js",
+				"src/router/mcs-routers.js",
+				"src/mcs/dmd/DmdApplyIndex.vue",
+				"dist/static/js/5.1f72530a52f4f251ceda.js.map",
+				"dist/static/js/21.9555ce4cfdb04c0e68d9.js",
+				"dist/static/js/9.6fe6df5c065a54fae687.js",
+				"dist/static/css/app.2a45bc3174facd7cdc48a0f4fa164509.css.map",
+				"src/mcs/dev/testcard.vue",
+				"src/assets/imgs/axgz.png",
+				"src/assets/eventBus.js",
+				"src/assets/imgs/saoma.png",
+				"src/assets/imgs/dingwei.png",
+				"src/mcs/law/PoliciesRegulationsView.vue",
+				"src/mcs/ids/PersonalCenterInput.vue",
+				"src/assets/imgs/qzjl.png",
+				"src/assets/imgs/renlianshibie.png",
+				"dist/static/js/13.715af177ffa8696c0260.js",
+				"dist/static/img/iconfont.f6f8d4c.svg",
+				"src/assets/imgs/xuqiucaiji.png",
+				"test/e2e/custom-assertions/elementCount.js",
+				"src/filters/edu-level.js",
+				"dist/static/js/28.56b051330a867fa6d480.js",
+				"src/mcs/msg/NoticeList.vue",
+				"src/assets/imgs/hrb.png",
+				"src/App.vue",
+				"dist/static/js/23.dd1e9a524ecf89b4bbb3.js.map",
+				"src/assets/imgs/jybz.png",
+				"src/data/apply-template.js",
+				"test/unit/specs/HelloWorld.spec.js",
+				"dist/static/js/8.de79868a9d5ca6ca8094.js.map",
+				"src/views/wui/Work.vue",
+				"src/mcs/msg/NoticeView.vue",
+				"dist/static/img/user_1.5364893.png",
+				"dist/static/js/1.aae82944596a5c12878a.js.map",
+				"dist/static/js/10.e72aa7fc1861d414231d.js.map",
+				"dist/static/img/big02.8b44c8c.png",
+				"src/assets/imgs/jiuye2.png",
+				"src/data/configData.js",
+				"src/assets/imgs/sjcj.png",
+				"test/unit/jest.conf.js",
+				"src/data/select-source.js",
+				"dist/static/js/11.ac271fe66df6ec4f372e.js",
+				"src/assets/imgs/zhiying.png",
+				"src/assets/imgs/shujudaping.png",
+				"src/filters/index.js",
+				"src/assets/imgs/rili.png",
+				"dist/static/js/17.b0ae581227ac9303a7f1.js.map",
+				"config/test.env.js",
+				"src/assets/imgs/canjirenyuan.png",
+				"dist/static/js/3.90c6e67cbcbfab34778b.js.map",
+				"src/assets/imgs/zcpp.png",
+				"src/assets/imgs/banbenshengji.png",
+				"src/assets/imgs/pxbm.png",
+				"static/quickstart/js/config.js",
+				"dist/static/js/2.b11321314ee34d128734.js.map",
+				"src/mcs/dad/DynamicUpdateView.vue",
+				"src/views/Login.vue",
+				"test/e2e/specs/test.js",
+				"src/assets/js/mui.js",
+				"dist/static/img/wuchang.c166779.png",
+				"dist/static/img/jiaoyin.d07fd59.png",
+				"dist/static/img/boy.df7a578.png",
+				"dist/static/js/2.b11321314ee34d128734.js",
+				"src/data/area-token.js",
+				"src/assets/imgs/hlbz.png",
+				"static/quickstart/css/bootstrap.css",
+				"build/utils.js",
+				"dist/static/js/26.00b3d86be890788b058f.js.map",
+				"dist/static/js/7.0b1563c7d4eeeec358d5.js.map",
+				"src/assets/imgs/gacj.jpg",
+				"src/mcs/ids/IdsCenterView.vue",
+				"dist/static/js/8.de79868a9d5ca6ca8094.js",
+				"src/filters/time.js",
+				"dist/static/js/manifest.70f4bafadc64af1e30b5.js.map",
+				"dist/static/quickstart/libs/vconsole.min.js",
+				"build/vue-loader.conf.js",
+				"static/quickstart/js/index.js",
+				"test/e2e/runner.js",
+				"build/build.js",
+				"src/mcs/dmd/StatBigScreenView.vue",
+				"test/e2e/test.txt",
+				"src/assets/imgs/gerenzhongxin.png",
+				"src/filters/disable-level.js",
+				"dist/static/js/18.9365d476ac0e9307fea4.js.map",
+				"build/webpack.prod.conf.js",
+				"dist/static/js/15.e09e57f7b20a0f585497.js"
+			]
+		}
+	}
+}
